@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+		<title>Jose's Most Ok'ish Pizza
+		</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Jose's Most Ok'ish Pizza</h1>
+			</header>
+			
+			<main>
+				<h3>Size</h3>
+				<p>Sizes:<br>
+					<label><input type="radio" name="size" value="2" />
+						Personal "2 inch" $2.00</label><br>
+					<label><input type="radio" name="size" value="10" /> 
+						Small "10 inch"	$10.00</label><br>
+					<label><input type="radio" name="size" value="12" /> 
+						Medium "14 inch" $12.00</label><br>
+					<label><input type="radio" name="size" value="15" /> 
+						Large "18 inch" $15.00</label><br>
+					<input type="hidden" name="sz_tot" value="0.00" />
+				</p>
+				<h3>Crust</h3>
+				<p>Crust Type:<br>
+					<label><input type="radio" name="crust" value="0" />
+						Regular  Crust "no extra charge"</label><br>
+					<label><input type="radio" name="crust" value=".50" /> 
+						Cheese Stuff Crust	$.50</label><br>
+					<label><input type="radio" name="crust" value="1" /> 
+						Pepperoni Top Crust	$1</label><br>
+				</p>
+				<h3>Toppings</h3>
+				<p id="pizza_toppings">Toppings: Meat<br>
+					<label><input type="checkbox" name="pepperoni" value=".50" /> Pepperoni
+					</label>
+					<label><input type="checkbox" name="sausage" value=".50" /> Sausage
+					</label>
+					<label><input type="checkbox" name="ham" value=".40" /> Ham
+					</label>
+					<label><input type="checkbox" name="bacon" value=".50" /> Bacon
+					</label>
+					<label><input type="checkbox" name="surstromming" value=".10" /> Surstromming
+					</label>
+					<label><input type="checkbox" name="chicken" value=".40" /> Chicken
+					</label>
+					<br><br>
+					Toppings: Plants<br>
+					<label><input type="checkbox" name="mushrooms" value=".30" /> Mushrooms
+					</label>
+					<label><input type="checkbox" name="onions" value=".30" /> Onions
+					</label>
+					<label><input type="checkbox" name="black_olives" value=".30" /> Black olives
+					</label>
+					<label><input type="checkbox" name="pineapple" value=".30" /> Pineapple
+					</label>
+					<label><input type="checkbox" name="ghost_pepper" value=".50" /> Ghost Pepper
+					</label>
+					<label><input type="checkbox" name="tufo" value=".30" /> Tufo
+					</label>
+					<br><br>
+					Toppings: Herbs <br>
+					<label><input type="checkbox" name="basil_leaves" value=".10" /> Basil Leaves
+					</label>
+					<label><input type="checkbox" name="mint_leaves" value=".10" /> Mint Leaves
+					</label>
+					<label><input type="checkbox" name="chives" value=".10" /> Chives
+					</label>
+					<label><input type="checkbox" name="lemon_grass" value=".20" /> Lemon Grass
+					</label>
+				</p>
+				<fieldset id="contactinfo">
+					<h3>Billing Address</h3>
+					<label for="fullName"><i class="user"></i> Full Name:
+					</label><br>
+					<input type="text" id="fullName" name="fullName" placeholder="Jose L. Padilla"><br>
+					<label for="email"><i class="fullName"></i> Email:
+					</label><br>
+					<input type="text" id="email" name="email" placeholder="example@example.com"><br>
+					<label for="address"><i class="email"></i> Address:
+					</label><br>
+					<input type="text" id="address" name="address" placeholder="#### Street"><br>
+					<label for="city"><i class="address"></i> City:
+					</label><br>
+					<input type="text" id="city" name="city" placeholder="California"><br>
+					<label for="state">State:
+					</label><br>
+					<input type="text" id="state" name="state" placeholder="CA"><br>
+					<label for="zip">Zip:</label><br>
+					<input type="text" id="zip" name="zip" placeholder="#####">
+				</fieldset>
+				<h3>Payment Info</h3>
+				<label for="fname">Accepted Cards: </label><br>
+				VISA - <i class="visa" ></i>
+				MASTERCARD - <i class="mastercard" ></i>
+				DISCOVER<i class="discover" ></i><br><br>
+            
+				<label for="cardName">Name on Card</label><br>
+				<input type="text" id="cardName" name="cardName" placeholder="Jose L. Padilla"><br>
+				<label for="cardNum">Credit Card Number</label><br>
+				<input type="text" id="cardNum" name="cardNum" placeholder="####-####-####"><br>
+				<label for="expmonth">Exp Month</label><br>
+				<input type="text" id="expMonth" name="expMonth" placeholder="MMM"><br>
+                <label for="expyear">Exp Year</label><br>
+                <input type="text" id="expYear" name="expYear" placeholder="####"><br>
+                <label for="cvvNum">CVV Number</label><br>
+                <input type="text" id="cvvNum" name="cvvNum" placeholder="###"><br><br>
+				
+				<input type="hidden" name="tops_tot" value="0.00" />
+				<p>
+					<label>Bill Total: $<input type="text" name="total" class="num" value="0.00" readonly="readonly" /></label>
+				</p>
+				<p>
+					<input type="submit" class="button" name="submit" value="Complete Order" />
+				</p>
+				
+				<script>
+					// Was not able to get It to work
+				</script>
+			</main>
+	
+			<footer>
+				<h3>This page is made by Jose L. Padilla, as a College homework Assignment and is for educational purposes.</h3>
+			</footer>
+		</div>
+	</body>
+</html>
